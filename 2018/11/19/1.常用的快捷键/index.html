@@ -16,26 +16,9 @@
   
   
   
-    <meta name="description" content="#makedown语法
-1.标题makdown中可以在普通的文章前加1个到六个#，让指定的文字变成标题
-##2.文字效果我是一段普通的文字（倾斜）加粗倾斜+加粗这是删除的文字(波浪线)
-##3.引用今天学习的内容是字符串
-
-单行引用
-
-当行引用
-
-单行引用
-
-
-
-123#代码引用num = 100str(num)
-##4.分割线
-
-
-想要在指定的任意位置添加水平方向的分割线，在需要分割线的地...">
+    <meta name="description" content="1.常用的快捷键ctrl + s -保存ctrl + / -注释和取消注释ctrl + b -sublime中的编译执行ctrl + c -复制，拷贝ctrl + v -粘贴ctrl + a -全选ctrl + z -撤销ctrl + shift + z -反撤销ctrl + x -剪切ctrl + f -查找按住shift不放点鼠标 - 选中指定范围按住ctrl不放点鼠标 - 多光标操作p...">
   
-  <title>markedown使用方法 [ Lujunchen's blog ]</title>
+  <title>初识python [ Lujunchen's blog ]</title>
   
   
     <link rel="shortcut icon" href="/hollow.ico">
@@ -54,7 +37,8 @@
 <body>
 <div class="side-navigate hide-area">
   
-    <div class="item prev">
+  
+    <div class="item next">
       <a href="/2018/11/19/计算机由硬件和软件构成/">
         <div class="item-icon"></div>
       </a>
@@ -62,7 +46,6 @@
         linux指令
       </div>
     </div>
-  
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -137,7 +120,7 @@
   
 
   <article id="post">
-    <h1>markedown使用方法</h1>
+    <h1>初识python</h1>
     <p class="page-title-sub">
       <span id="post-title-date">Created at 2018-11-19</span>
       
@@ -172,55 +155,32 @@
       
     </p>
     
-    <p>#makedown语法</p>
-<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>makdown中可以在普通的文章前加1个到六个#，让指定的文字变成标题</p>
-<p>##2.文字效果<br>我是一段<em>普通</em>的文字（倾斜）<br><strong>加粗</strong><br><strong><em>倾斜+加粗</em></strong><br><del>这是删除的文字</del>(波浪线)</p>
-<p>##3.引用<br>今天学习的内容是字符串</p>
-<blockquote>
-<p>单行引用</p>
-<blockquote>
-<p>当行引用</p>
-<blockquote>
-<p>单行引用</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#代码引用</span></span><br><span class="line">num = <span class="number">100</span></span><br><span class="line">str(num)</span><br></pre></td></tr></table></figure>
-<p>##4.分割线</p>
-<hr>
-<hr>
-<p>想要在指定的任意位置添加水平方向的分割线，在需要分割线的地方加三个“-”或者‘*’</p>
-<hr>
-<hr>
-<p>##5.图片<br>在文档中导入图片</p>
-<p><img src="https://www.baidu.com/img/bd_logo1.png" alt="百度图片"></p>
-<p><img src="c:\Users\Administrator\Pictures\屏保桌面\屏保2.png" alt="屏保"></p>
-<p>##超链接<br><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-<p>##列表<br>今日内容：(无序列表)</p>
-<ul>
-<li>安装软件</li>
-<li>认识老师</li>
-<li>学习markdown</li>
-</ul>
-<p>##表格</p>
-<table>
-<thead>
-<tr>
-<th>名字</th>
-<th>成绩</th>
-<th>是否留级</th>
-<th>评价</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>李四</td>
-<td>90</td>
-<td>否</td>
-<td>学习认真</td>
-</tr>
-</tbody>
-</table>
+    <p>1.常用的快捷键<br>ctrl + s -保存<br>ctrl + / -注释和取消注释<br>ctrl + b -sublime中的编译执行<br>ctrl + c -复制，拷贝<br>ctrl + v -粘贴<br>ctrl + a -全选<br>ctrl + z -撤销<br>ctrl + shift + z -反撤销<br>ctrl + x -剪切<br>ctrl + f -查找<br>按住shift不放点鼠标 - 选中指定范围<br>按住ctrl不放点鼠标 - 多光标操作<br>print是python中的内置函数，功能是在控制台输出括号里面的内容</p>
+<p>print(‘hello world,你好世界！’)<br>2.注释<br>注释就是代码中不参与执行的说明文字<br>当行注释：在文字前加#<br>“””<br>多行注释：用三个单引号或者三个双引号引起来（一般使用双引号）<br>多行注释第一行<br>多行注释第二行<br>“””</p>
+<p>3.标志符<br>程序中专门用来命名的符号叫做标志符<br>python中标志符的要求：所有的标志符是由字母，数字和下划线组成，并且数字不能开头<br>在python3.x中标志符还可以包括中文</p>
+<ol start="4">
+<li>变量名 = 值</li>
+</ol>
+<p>num = 10<br>数字 = 10   #python3.x中标志符可以使用中文<br>5.缩进<br>一行代码前的空格叫缩进，python中每行代码前缩进的个数是有规范的<br>不能随便缩进，也不能在该缩进的时候不缩进</p>
+<pre><code>num = 10             #IndentationError缩进错误
+</code></pre><p>5.关键字<br>系统保留下来具有特殊功能或者特殊意义的标志符就是关键字（保留字）</p>
+<p>import keyword<br>print(keyword.kwlist)<br>“””<br>‘False’, ‘None’, ‘True’, ‘and’, ‘as’, ‘assert’,<br>‘break’, ‘class’, ‘continue’, ‘def’, ‘del’, ‘elif’,<br>‘else’, ‘except’, ‘finally’, ‘for’, ‘from’, ‘global’,<br>‘if’, ‘import’, ‘in’, ‘is’, ‘lambda’, ‘nonlocal’,<br>‘not’, ‘or’, ‘pass’, ‘raise’, ‘return’, ‘try’, ‘while’,<br>‘with’, ‘yield’（关键字）<br>“””<br>6.常用数据类型<br>int - 整型（整数）,例如：10，-100,123,0，+321 float - 浮点型(小数),例如：3.141516927<br>str - 字符串， 例如：‘今天天气真好！’,“hello!”<br>bool - 布尔,值只有True和False两个，True - 真成立，False - 假不成立<br>list(列表)、dict(字典)、set(集合)、tuple(元祖)、迭代器、生成器、function等。</p>
+<p>7.两个常用的内置函数 ：<br>print(),input()<br>a.输出函数：print() - 在控制台输出括号里面的内容<br>print(变量)，print(数据),print(数据1，数据2)</p>
+<p>num = 100<br>int2 = 1000<br>message = ‘你好吗’<br>print(num, int2, message, 122)  # 同时输出多个数据<br>注意：一个print打印的数据占一行，如果一个print同时打印 多个数据，多个数据之间显示的时候是用空格隔开的</p>
+<p>b.输入函数：input() - 从输入设备上获取输入的内容到程序中<br>输入结果 = input(提示信息)</p>
+<p>result = input(‘请输入账号：’)<br>print(‘结果：’,result)<br>注意：当程序执行到input函数的时候，程序会停下来等待输入完成</p>
+<p>写程序用来收集一个人的姓名，年龄，并且打印出来</p>
+<p>name = input(“请输入你的名字:”)<br>age = input(‘请输入你的年龄:’)<br>print(name,age)<br>8.变量<br>变量是用来在内存中开辟空间保存数据的<br>怎么声明/定义变量<br>语法：变量名 = 数据 #<br>说明：a.变量名 - 标志符，并且不能是关键字<br>见名知义（看到变量名大概能知道这个变量中存的数据）<br>所有字母都小写，如果变量名是由多个单词组成，单词之间用下划线隔开<br>b.= - 赋值符号 ，将赋值符号右边的数据赋值到左边的变量<br>c.数据 - 数据可以是不同类型的值，也可以是已经声明过的变量或者是运算表达式</p>
+<p>student_name = ‘xiaoming’<br>num2 = 12 + 23<br>print(num2)<br>已经声明过得变量可以重新赋值，新赋的值会覆盖原来的值</p>
+<p>num = 12<br>num = 13<br>num = ‘xiaohua’<br>print(num)<br>9.同时声明多个变量</p>
+<p>a = b = c = 100   # 同时声明多个变量赋相同的值<br>print(a,b,c)<br>a1,a2,a3 = 10,20,30   # 同时声明多个变量赋不同的值<br>print(a1,a2,a3)<br>python中声明变量和给变量赋值的基本原理：<br>先开辟空间将被数据存起来，数据需要多大的内存空间就开辟多大的内存。然后再将变量指向对应的内存区域</p>
+<p>单位：<br>8位（bit） = 1字节（byte）<br>1024字节 = 1kb<br>1024kb = 1Mb<br>1024Mb = 1Gb<br>1024Gb = 1T<br>10.数学运算符<br>python支持的运算符有：数学运算符，比较运算符，逻辑运算符，赋值运算符<br>a.数学运算符：+(加)，- （减），* （乘），/ （除）, // （整除）, %（取余）, **（幂运算）<br>前面的加减乘除和数学中的加减乘除的功能一样</p>
+<p>print(2+33)<br>print(4-3)<br>print(4*3)<br>print(6/4)<br>//求商结果只保留整数部分</p>
+<p>print(9//5)                   #1<br>print(9.2//5)                 #1.0<br>% - 求余数</p>
+<p>print(9%5)                    #4<br>print(9.2%5)                  #4.19999999999<br><strong> - 幂运算（X</strong>Y 求x的y次方）</p>
+<p>print(2**8)                   #256</p>
+<p>print(19 + 23 * 2 - 10 / 5)   #63.0<br>括号可以改变运算顺序</p>
+<p>菱形<br>import turtle<br>turtle.pensize(4)<br>turtle.pencolor(‘blue’)<br>turtle.forward(100)<br>turtle.right(150)<br>turtle.forward(100)<br>turtle.right(30)<br>turtle.forward(100)<br>turtle.right(150)<br>turtle.forward(100)<br>turtle.mainloop()</p>
 
   </article>
   <div class="random-toc-area">
@@ -228,18 +188,18 @@
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
   <div class="random-toc">
     <h2>Table of Content</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-标题"><span class="toc-text">1.标题</span></a></li></ol>
+    
   </div>
 </div>
 
   
 <nav id="pagination">
   
-    <a href="/2018/11/19/计算机由硬件和软件构成/" class="prev">&larr; Prev post linux指令</a>
-  
 
   
 
+  
+    <a href="/2018/11/19/计算机由硬件和软件构成/" class="next">Next post linux指令 &rarr;</a>
   
 </nav>
 
